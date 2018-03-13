@@ -1,5 +1,7 @@
 {
   "name": "gothic-prince/verify",
+  "minimum-stability": "dev",
+  "description": "",
   "autoload": {
     "psr-4": {
       "GothicPrince\\Verify\\": ["src/", "tests/src/"]
