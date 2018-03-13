@@ -7,19 +7,19 @@ final class ItShouldContainsTextTest extends TestCase
   public function testReturnTrue()
   {
     $this->assertTrue(
-      ThisObject::ofString('My Text')->shouldContainsText('Text')
+      ThisObject::ofString('My Text')->shouldContains('Text')
     );
     $this->assertTrue(
-      ThisObject::ofString('My name is Alex')->shouldContainsText('alex')
+      ThisObject::ofString('My name is Alex')->shouldContains('alex')
     );
   }
   public function testReturnFalse()
   {
     $this->assertFalse(
-      ThisObject::ofString('Hello World')->shouldContainsText('helo')
+      ThisObject::ofString('Hello World')->shouldContains('helo')
     );
     $this->assertFalse(
-      ThisObject::ofString('text')->shouldContainsText('ext1')
+      ThisObject::ofString('text')->shouldContains('ext1')
     );
   }
 }

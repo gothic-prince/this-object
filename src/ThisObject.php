@@ -3,9 +3,9 @@ namespace GothicPrince\Verify;
 class ThisObject {
   /**
    * @param $value
-   * @return should
+   * @return VerifyString
    */
   public static function ofString($value) {
-    return new Should($value);
+    return new VerifyString($value);
   }
 }

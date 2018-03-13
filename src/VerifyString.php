@@ -1,16 +1,16 @@
 <?php
 namespace GothicPrince\Verify;
-class Should {
+class VerifyString {
   protected $value;
   public function __construct($value) {
     $this->value = $value;
   }
 
   /**
-   * @param $needText
+   * @param $needText string
    * @return boolean
    */
-  public function shouldContainsText ($needText) {
+  public function shouldContains ($needText) {
     return boolval(preg_match("/{$needText}/i", $this->value));
   }
 }
